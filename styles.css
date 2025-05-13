@@ -1,0 +1,76 @@
+:root {
+  --primary: #87ceeb;
+  --secondary: #ffffff;
+  --text: #000000;
+  --bg: #f1f2f6;
+  --bg-dark: #1e272e;
+  --text-dark: #d2dae2;
+  --card-dark: #485460;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  background: var(--primary);
+  color: var(--text);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--secondary);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+button.theme-toggle {
+  background: none;
+  border: 2px solid var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--secondary);
+}
+
+footer {
+  background: var(--primary);
+  text-align: center;
+  color: var(--text);
+  padding: 1rem;
+}
